@@ -106,6 +106,31 @@ class TestGating:
         assert out.prediction is not None
 
 
+class TestMaskIsOptional:
+    """The learned mask must never be a hard dependency of the activity."""
+
+    def test_works_without_a_mask(self):
+        assert _call(_Estimate(0.89)).prediction is not None
+
+    def test_mask_is_forwarded_to_the_estimator(self):
+        seen = {}
+
+        def estimator(*a, **kw):
+            seen["mask"] = kw.get("board_mask")
+            return _Estimate(0.89)
+
+        predict_slate(
+            bgr=np.zeros((10, 10, 3), np.uint8),
+            template_gray=np.zeros((10, 10), np.uint8),
+            template_points=[(0.0, 0.0)] * 6, dpi=300,
+            camera_matrix=np.eye(3), pdf_width_px=4200, pdf_height_px=2550,
+            photo_width=4014, photo_height=3016, slate_name="V-Slate 1",
+            model_version="v1", board_mask=np.ones((4, 4), np.uint8),
+            _estimator=estimator,
+        )
+        assert seen["mask"] is not None
+
+
 class TestPredictionShape:
     def test_points_are_percentages_of_the_composite_canvas(self):
         out = _call(_Estimate(0.89))

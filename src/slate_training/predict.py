@@ -34,8 +34,18 @@ Two gates, both from measurement:
    template-blur sweep showed ECC ranks configurations misleadingly even
    though it ranks frames well. Re-tune it if the estimator changes.
 
-This runs on CPU: no GPU, no checkpoint, no `nodeAffinity`. That is a
-meaningful deployment simplification over the laser detector.
+Deployment shape (this docstring previously said "no checkpoint", which is now
+wrong — the learned mask was added afterwards):
+
+* There **is** a versioned checkpoint: `board_unet.pt`, 1.08M params, 4.4 MB.
+* It does **not** need a GPU: 202 ms/frame on CPU with 4 threads. No
+  `nodeAffinity`, no SM>=7.5 requirement.
+* The mask is **optional**. `board_mask=None` is a supported path that costs
+  ~13 points of coverage (80% -> 67% seeded), so the activity still functions
+  if the checkpoint is absent or fails to load.
+
+So: package like the laser detector (versioned checkpoint behind an extra),
+deploy unlike it (an ordinary CPU activity).
 """
 
 from __future__ import annotations
@@ -105,9 +115,18 @@ def predict_slate(
     slate_name: str,
     model_version: str,
     min_confidence: float = DEFAULT_MIN_CONFIDENCE,
+    board_mask: np.ndarray | None = None,
     _estimator: Callable[..., Any] = estimate_plane,
 ) -> SlatePrediction:
     """Estimate the board and return a gated LS pre-annotation.
+
+    `board_mask` is the learned board segmentation (any resolution, uint8 or
+    float). Optional — omitting it falls back to purely classical localization
+    at ~13 points lower coverage.
+
+    **This signature is frozen.** Accuracy improvements ship as new checkpoints
+    and new threshold constants, never as parameter changes, so a caller can
+    integrate against it before the numbers stop moving.
 
     `_estimator` is injectable so the gating logic can be tested without
     OpenCV work; production callers should leave it alone.
@@ -116,7 +135,8 @@ def predict_slate(
         return SlatePrediction(None, None, 0.0, "unsupported_slate_family")
 
     estimate = _estimator(
-        bgr, template_gray, template_points, dpi, camera_matrix
+        bgr, template_gray, template_points, dpi, camera_matrix,
+        board_mask=board_mask,
     )
     if estimate is None:
         return SlatePrediction(None, None, 0.0, "no_board")
