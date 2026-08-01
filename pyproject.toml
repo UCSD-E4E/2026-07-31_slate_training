@@ -23,6 +23,7 @@ extract = [
 mask = [
     "torch>=2.4",
     "opencv-python-headless>=4.9",
+    "huggingface-hub>=0.26",
 ]
 train = [
     "torch>=2.4",

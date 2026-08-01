@@ -35,7 +35,22 @@ from typing import Any, Tuple
 import cv2
 import numpy as np
 
-__all__ = ["BoardMasker", "build_unet", "preprocess", "MASK_MEAN", "MASK_STD"]
+__all__ = [
+    "BoardMasker",
+    "build_unet",
+    "preprocess",
+    "DEFAULT_HF_REPO",
+    "DEFAULT_CHECKPOINT",
+    "MASK_MEAN",
+    "MASK_STD",
+]
+
+# Mirrors the laser detector's convention (ucsde4e/fishsense-laser-detector).
+# Note the data-worker Dockerfile bakes that checkpoint in at build time so the
+# activity never reaches HuggingFace at run time -- preemptible NRP pods with
+# no HF token. Do the same here.
+DEFAULT_HF_REPO = "ucsde4e/fishsense-slate-detector"
+DEFAULT_CHECKPOINT = "board_unet_v0.1.0.pt"
 
 # Training-time normalization. Must match `scripts/train_mask.py` exactly; a
 # mismatch here degrades the mask silently rather than raising.
@@ -139,6 +154,34 @@ class BoardMasker:
         model.load_state_dict(payload["model"])
         model.eval().to(device)
         return cls(model, tuple(payload["size"]), device)
+
+    @classmethod
+    def from_pretrained(
+        cls,
+        repo_id: str = DEFAULT_HF_REPO,
+        *,
+        filename: str = DEFAULT_CHECKPOINT,
+        revision: str = "main",
+        device: str = "cpu",
+        threads: int | None = 4,
+    ) -> "BoardMasker":
+        """Download a published checkpoint from HuggingFace and load it.
+
+        Signature mirrors `LaserDetector.from_pretrained` so the two detectors
+        read the same way at the call site. `device` defaults to CPU rather
+        than CUDA-when-available: this model is 202 ms/frame on CPU and the
+        activity is deliberately not GPU-scheduled.
+        """
+        try:
+            from huggingface_hub import hf_hub_download  # noqa: PLC0415
+        except ImportError as exc:  # pragma: no cover - depends on extras
+            raise ImportError(
+                "from_pretrained requires huggingface_hub. Install the "
+                "optional extra: pip install 'slate-training[mask]'"
+            ) from exc
+
+        path = hf_hub_download(repo_id, filename, revision=revision)
+        return cls.from_checkpoint(path, device=device, threads=threads)
 
     def predict(self, bgr: np.ndarray) -> np.ndarray:
         """Board probability map for one frame.

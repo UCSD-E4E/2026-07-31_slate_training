@@ -95,3 +95,25 @@ class TestRoundTrip:
             np.zeros((300, 400, 3), np.uint8))
         # Must not raise on the float-probability path, whatever it contains.
         mask_candidates(probs, (300, 400))
+
+
+class TestFromPretrained:
+    """Mirrors LaserDetector.from_pretrained so both read alike at call sites."""
+
+    def test_defaults_match_the_e4e_convention(self):
+        from slate_training.mask import DEFAULT_CHECKPOINT, DEFAULT_HF_REPO
+        assert DEFAULT_HF_REPO.startswith("ucsde4e/")
+        assert DEFAULT_CHECKPOINT.endswith(".pt")
+
+    def test_missing_hub_raises_a_pointed_import_error(self, monkeypatch):
+        import builtins
+        real = builtins.__import__
+
+        def blocked(name, *a, **kw):
+            if name == "huggingface_hub":
+                raise ImportError("no hub")
+            return real(name, *a, **kw)
+
+        monkeypatch.setattr(builtins, "__import__", blocked)
+        with pytest.raises(ImportError, match=r"slate-training\[mask\]"):
+            BoardMasker.from_pretrained()
