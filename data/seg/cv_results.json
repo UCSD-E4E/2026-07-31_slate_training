@@ -1,0 +1,74 @@
+[
+ {
+  "dive": 279,
+  "n": 6,
+  "slate": "Tic-Tac-Toe 6",
+  "final_iou": 0.2640889665732781,
+  "final_hit": 0.6666666666666666,
+  "best_iou": 0.3783443917830785,
+  "best_hit": 1.0
+ },
+ {
+  "dive": 341,
+  "n": 33,
+  "slate": "V-Slate 1",
+  "final_iou": 0.7699154868270411,
+  "final_hit": 1.0,
+  "best_iou": 0.6359760797385013,
+  "best_hit": 1.0
+ },
+ {
+  "dive": 347,
+  "n": 18,
+  "slate": "V-Slate 4",
+  "final_iou": 0.7394639121161567,
+  "final_hit": 1.0,
+  "best_iou": 0.5076260136233436,
+  "best_hit": 1.0
+ },
+ {
+  "dive": 349,
+  "n": 12,
+  "slate": "V-Slate 1",
+  "final_iou": 0.7891112466653188,
+  "final_hit": 1.0,
+  "best_iou": 0.46461524566014606,
+  "best_hit": 1.0
+ },
+ {
+  "dive": 383,
+  "n": 9,
+  "slate": "V-Slate 3",
+  "final_iou": 0.38471300848242307,
+  "final_hit": 0.8888888888888888,
+  "best_iou": 0.42895838390621877,
+  "best_hit": 0.8888888888888888
+ },
+ {
+  "dive": 465,
+  "n": 10,
+  "slate": "V-Slate 1",
+  "final_iou": 0.6025815995177254,
+  "final_hit": 0.8,
+  "best_iou": 0.38530877232551575,
+  "best_hit": 0.8
+ },
+ {
+  "dive": 466,
+  "n": 11,
+  "slate": "V-Slate 1",
+  "final_iou": 0.7527267065915194,
+  "final_hit": 1.0,
+  "best_iou": 0.4574690136042508,
+  "best_hit": 1.0
+ },
+ {
+  "dive": 471,
+  "n": 5,
+  "slate": "V-Slate 1",
+  "final_iou": 0.7943745613098144,
+  "final_hit": 1.0,
+  "best_iou": 0.6281165361404419,
+  "best_hit": 1.0
+ }
+]

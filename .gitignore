@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Vendored label/geometry manifests are small and committed; pixels are not.
+data/images/
+data/seg/images/
+data/seg/masks/
+data/seg/oof/
+data/overlays/
+data/crops/
+data/failures/
+data/templates/
+data/**/*.JPG
+data/**/*.ORF
+*.pt
+*.ckpt
+
+# Diagnostic renders contain photographs of identifiable divers.
+data/seg/mask_check.png

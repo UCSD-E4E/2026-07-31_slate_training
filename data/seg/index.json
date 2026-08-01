@@ -1,0 +1,630 @@
+{
+ "width": 512,
+ "height": 385,
+ "items": [
+  {
+   "label_id": 33,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007274756493506494
+  },
+  {
+   "label_id": 201,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.04362824675324675
+  },
+  {
+   "label_id": 65,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.009070616883116884
+  },
+  {
+   "label_id": 26,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006950081168831169
+  },
+  {
+   "label_id": 30,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007026176948051948
+  },
+  {
+   "label_id": 68,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006630478896103896
+  },
+  {
+   "label_id": 24,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006965300324675325
+  },
+  {
+   "label_id": 64,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.009146712662337662
+  },
+  {
+   "label_id": 66,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.00921773538961039
+  },
+  {
+   "label_id": 69,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006767451298701299
+  },
+  {
+   "label_id": 23,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011049107142857144
+  },
+  {
+   "label_id": 86,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0034750405844155845
+  },
+  {
+   "label_id": 34,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0072392451298701295
+  },
+  {
+   "label_id": 200,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.03351765422077922
+  },
+  {
+   "label_id": 9,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03174208603896104
+  },
+  {
+   "label_id": 16,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011252029220779221
+  },
+  {
+   "label_id": 20,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.010932426948051948
+  },
+  {
+   "label_id": 32,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007107345779220779
+  },
+  {
+   "label_id": 55,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.0035866477272727274
+  },
+  {
+   "label_id": 62,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.010536728896103896
+  },
+  {
+   "label_id": 1,
+   "dive": 279,
+   "slate": "Tic-Tac-Toe 6",
+   "mask_frac": 0.0462307224025974
+  },
+  {
+   "label_id": 58,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.02406655844155844
+  },
+  {
+   "label_id": 75,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007929180194805195
+  },
+  {
+   "label_id": 85,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.008182832792207792
+  },
+  {
+   "label_id": 202,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.016832386363636365
+  },
+  {
+   "label_id": 51,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.0073965097402597406
+  },
+  {
+   "label_id": 61,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.02736911525974026
+  },
+  {
+   "label_id": 81,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.021946022727272727
+  },
+  {
+   "label_id": 203,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.007335633116883117
+  },
+  {
+   "label_id": 77,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03302049512987013
+  },
+  {
+   "label_id": 63,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.010592532467532468
+  },
+  {
+   "label_id": 11,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03340097402597403
+  },
+  {
+   "label_id": 71,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.037073863636363634
+  },
+  {
+   "label_id": 82,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.021758319805194805
+  },
+  {
+   "label_id": 204,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.004048295454545455
+  },
+  {
+   "label_id": 53,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.007274756493506494
+  },
+  {
+   "label_id": 76,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0066101866883116886
+  },
+  {
+   "label_id": 78,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.026963271103896104
+  },
+  {
+   "label_id": 83,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.008157467532467532
+  },
+  {
+   "label_id": 205,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.09589590097402598
+  },
+  {
+   "label_id": 36,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007432021103896104
+  },
+  {
+   "label_id": 35,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007426948051948052
+  },
+  {
+   "label_id": 89,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0034953327922077923
+  },
+  {
+   "label_id": 206,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.03640422077922078
+  },
+  {
+   "label_id": 41,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.035932426948051946
+  },
+  {
+   "label_id": 40,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.03401988636363636
+  },
+  {
+   "label_id": 43,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.029753449675324676
+  },
+  {
+   "label_id": 79,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0080762987012987
+  },
+  {
+   "label_id": 207,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.015533685064935064
+  },
+  {
+   "label_id": 2,
+   "dive": 279,
+   "slate": "Tic-Tac-Toe 6",
+   "mask_frac": 0.043481128246753244
+  },
+  {
+   "label_id": 42,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.03255377435064935
+  },
+  {
+   "label_id": 39,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0075436282467532464
+  },
+  {
+   "label_id": 46,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.026598011363636365
+  },
+  {
+   "label_id": 208,
+   "dive": 383,
+   "slate": "V-Slate 3",
+   "mask_frac": 0.00870028409090909
+  },
+  {
+   "label_id": 8,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.030661525974025973
+  },
+  {
+   "label_id": 38,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007492897727272727
+  },
+  {
+   "label_id": 37,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007523336038961039
+  },
+  {
+   "label_id": 47,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.027749594155844156
+  },
+  {
+   "label_id": 44,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.031321022727272725
+  },
+  {
+   "label_id": 84,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.008040787337662338
+  },
+  {
+   "label_id": 88,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.003297483766233766
+  },
+  {
+   "label_id": 45,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.02866781655844156
+  },
+  {
+   "label_id": 49,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.024497767857142857
+  },
+  {
+   "label_id": 91,
+   "dive": 471,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.04090401785714286
+  },
+  {
+   "label_id": 15,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011602069805194805
+  },
+  {
+   "label_id": 48,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.025552962662337662
+  },
+  {
+   "label_id": 52,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.007345779220779221
+  },
+  {
+   "label_id": 95,
+   "dive": 471,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.007041396103896104
+  },
+  {
+   "label_id": 50,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.007619724025974026
+  },
+  {
+   "label_id": 56,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.0039163961038961035
+  },
+  {
+   "label_id": 14,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.036135349025974026
+  },
+  {
+   "label_id": 13,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03535409902597403
+  },
+  {
+   "label_id": 93,
+   "dive": 471,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.00408887987012987
+  },
+  {
+   "label_id": 94,
+   "dive": 471,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.008953936688311688
+  },
+  {
+   "label_id": 5,
+   "dive": 279,
+   "slate": "Tic-Tac-Toe 6",
+   "mask_frac": 0.020703125
+  },
+  {
+   "label_id": 4,
+   "dive": 279,
+   "slate": "Tic-Tac-Toe 6",
+   "mask_frac": 0.019825487012987014
+  },
+  {
+   "label_id": 19,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011099837662337662
+  },
+  {
+   "label_id": 22,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.01098823051948052
+  },
+  {
+   "label_id": 17,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011196225649350649
+  },
+  {
+   "label_id": 21,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011160714285714286
+  },
+  {
+   "label_id": 54,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.003728693181818182
+  },
+  {
+   "label_id": 72,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03139711850649351
+  },
+  {
+   "label_id": 31,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.00703125
+  },
+  {
+   "label_id": 59,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.022356939935064934
+  },
+  {
+   "label_id": 3,
+   "dive": 279,
+   "slate": "Tic-Tac-Toe 6",
+   "mask_frac": 0.04085328733766234
+  },
+  {
+   "label_id": 12,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03409090909090909
+  },
+  {
+   "label_id": 57,
+   "dive": 347,
+   "slate": "V-Slate 4",
+   "mask_frac": 0.003612012987012987
+  },
+  {
+   "label_id": 60,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.025745738636363636
+  },
+  {
+   "label_id": 18,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.011191152597402597
+  },
+  {
+   "label_id": 73,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03083400974025974
+  },
+  {
+   "label_id": 80,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.06134334415584416
+  },
+  {
+   "label_id": 74,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.02421367694805195
+  },
+  {
+   "label_id": 92,
+   "dive": 471,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.004124391233766234
+  },
+  {
+   "label_id": 10,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03243709415584416
+  },
+  {
+   "label_id": 28,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006894277597402598
+  },
+  {
+   "label_id": 87,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.0032619724025974026
+  },
+  {
+   "label_id": 6,
+   "dive": 279,
+   "slate": "Tic-Tac-Toe 6",
+   "mask_frac": 0.005022321428571429
+  },
+  {
+   "label_id": 29,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006919642857142857
+  },
+  {
+   "label_id": 27,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006965300324675325
+  },
+  {
+   "label_id": 7,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.029859983766233767
+  },
+  {
+   "label_id": 90,
+   "dive": 466,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.026283482142857143
+  },
+  {
+   "label_id": 25,
+   "dive": 341,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006945008116883117
+  },
+  {
+   "label_id": 67,
+   "dive": 349,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.006772524350649351
+  },
+  {
+   "label_id": 70,
+   "dive": 465,
+   "slate": "V-Slate 1",
+   "mask_frac": 0.03499898538961039
+  }
+ ]
+}
