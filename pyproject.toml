@@ -7,9 +7,10 @@ requires-python = ">=3.12"
 dependencies = [
     # Canonical home for the board-plane primitive and the classical estimator
     # (fishsense_core.plane, fishsense_core.slate) — moved out of this repo so
-    # there is one definition. Sourced from the local checkout below; switch to
-    # the released wheel once it carries these (>= 2.4.0).
-    "fishsense-core",
+    # there is one definition. Sourced from the local checkout below; drop the
+    # [tool.uv.sources] override to use the released wheel. 2.4.1 is the first
+    # release that carries these AND has published wheels (2.4.0 shipped none).
+    "fishsense-core>=2.4.1",
     "numpy>=1.26",
 ]
 
@@ -28,7 +29,7 @@ extract = [
 # that extra rather than being redeclared here. Deliberately separate from
 # `train`: no torchvision.
 mask = [
-    "fishsense-core[slate]",
+    "fishsense-core[slate]>=2.4.1",
 ]
 train = [
     "torch>=2.4",
