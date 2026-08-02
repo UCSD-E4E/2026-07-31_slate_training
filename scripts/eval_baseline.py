@@ -18,13 +18,13 @@ import pymupdf
 import rawpy
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-from slate_training.baseline import estimate_plane  # noqa: E402
+from fishsense_core.slate import estimate_plane  # noqa: E402
 from slate_training.contracts import (  # noqa: E402
     composite_panel_width,
     drop_skipped,
     repair_panel_offset,
 )
-from slate_training.geometry import plane_difference, plane_from_pose  # noqa: E402
+from fishsense_core.plane import plane_difference, plane_from_pose  # noqa: E402
 
 INCH_TO_M = 0.0254
 PHOTO_W = 4014

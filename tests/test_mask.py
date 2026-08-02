@@ -85,7 +85,7 @@ class TestRoundTrip:
 
     def test_output_feeds_mask_candidates_directly(self, tmp_path):
         import torch
-        from slate_training.baseline import mask_candidates
+        from fishsense_core.slate.estimator import mask_candidates
         from slate_training.mask import build_unet
 
         model = build_unet()

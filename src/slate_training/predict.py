@@ -55,8 +55,8 @@ from typing import Any, Callable, Dict, Sequence
 
 import numpy as np
 
-from slate_training.baseline import estimate_plane
-from slate_training.geometry import Plane
+from fishsense_core.slate import estimate_plane
+from fishsense_core.plane import Plane
 from slate_training.label_studio import build_prediction, composite_dimensions
 
 __all__ = [
