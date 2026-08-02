@@ -8,7 +8,7 @@ producing nothing.
 import numpy as np
 import pytest
 
-from slate_training.geometry import Plane
+from fishsense_core.plane import Plane
 from slate_training.predict import (
     DEFAULT_MIN_CONFIDENCE,
     SUPPORTED_FAMILIES,

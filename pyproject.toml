@@ -5,6 +5,11 @@ description = "Model-assisted dive-slate labeling for FishSense laser calibratio
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    # Canonical home for the board-plane primitive and the classical estimator
+    # (fishsense_core.plane, fishsense_core.slate) — moved out of this repo so
+    # there is one definition. Sourced from the local checkout below; switch to
+    # the released wheel once it carries these (>= 2.4.0).
+    "fishsense-core",
     "numpy>=1.26",
 ]
 
@@ -45,6 +50,7 @@ markers = [
 
 [tool.uv.sources]
 fishsense-api-sdk = { path = "../fishsense-lite/libs/fishsense-api-sdk", editable = true }
+fishsense-core = { path = "../fishsense-core/python/fishsense_core", editable = true }
 
 [build-system]
 requires = ["hatchling"]
